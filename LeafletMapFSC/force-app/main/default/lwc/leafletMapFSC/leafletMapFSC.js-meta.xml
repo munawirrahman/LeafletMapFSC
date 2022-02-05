@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property
+            name = "currentLocationButtonLabel"
+            label = "Button label to show access user's location. If not present, button won't show"
+            type = "String"
+            role = "inputOnly"/>
+            <property
+            name = "popupTextValue"
+            label = "Popup Text Value when pinpoint clicked"
+            type = "String"
+            role = "inputOnly"/>
+            <property
+            name = "required"
+            label = "Required latitude and longitude?"
+            default="false"
+            required = "true"
+            type = "Boolean"
+            role = "inputOnly"/>
+            <property
+            name = "draggable"
+            label = "Allow pinpoint to be dragged?"
+            default="true"
+            required = "true"
+            type = "Boolean"
+            role = "inputOnly"/>
+            <property
+            name = "latitude"
+            label = "Selected latitude"
+            type = "Integer"/>
+            <property
+            name = "longitude"
+            label = "Selected longitude"
+            type = "Integer"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

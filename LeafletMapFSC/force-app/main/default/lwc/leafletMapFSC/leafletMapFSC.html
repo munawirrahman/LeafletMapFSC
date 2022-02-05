@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <lightning-input-location label="Latitude and Longitude" latitude={latitude} longitude={longitude} required={required} readonly></lightning-input-location>
+    </div>
+    <div if:true={showMap} class="slds-box slds-theme_default"></div>
+    <div if:true={showPinpointCurrentLocButton}>
+        <lightning-button label={currentLocationButtonLabel} icon-name="utility:pinned" variant="success" onclick={searchUserLocation} class="slds-align_absolute-center"></lightning-button>
+    </div>
+</template>
